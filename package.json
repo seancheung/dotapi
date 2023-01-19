@@ -1,0 +1,32 @@
+{
+  "name": "dotapi",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "bin": "dist/cli.js",
+  "types": "dist/index.d.ts",
+  "repository": "git@github.com:seancheung/dotapi.git",
+  "author": "sean <theoxuanx@gmail.com>",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc -w",
+    "prebuild": "rimraf dist",
+    "release": "release-it",
+    "prerelease": "yarn build"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.12",
+    "@types/yargs": "^17.0.17",
+    "openapi-types": "^12.1.0",
+    "release-it": "^15.5.1",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "ts-morph": "^17.0.1",
+    "yargs": "^17.6.2"
+  }
+}
